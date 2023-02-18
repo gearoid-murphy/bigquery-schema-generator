@@ -193,7 +193,7 @@ class SchemaGenerator:
                 self.line_number += 1
                 if self.line_number % self.debugging_interval == 0:
                     logging.info(f'Processing line {self.line_number}')
-                if self.line_number >= 1000000:
+                if self.line_number >= 100000:
                     break
 
                 # Deduce the schema from this given data record.
