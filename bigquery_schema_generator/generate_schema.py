@@ -175,7 +175,7 @@ class SchemaGenerator:
         """
 
         if self.input_format == 'csv':
-            reader = csv.DictReader(input_data, delimiter='|', quoting=csv.QUOTE_NONE)
+            reader = csv.DictReader(input_data, delimiter=',', quoting=csv.QUOTE_NONE)
         elif self.input_format == 'json' or self.input_format is None:
             reader = json_reader(input_data)
         elif self.input_format == 'dict':
